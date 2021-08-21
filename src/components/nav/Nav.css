@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header h3 {
+    padding-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.login {
+    margin-right: 10px;
+}

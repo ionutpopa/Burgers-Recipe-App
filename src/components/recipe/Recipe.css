@@ -1,0 +1,13 @@
+.recipe {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ud-buttons {
+    border-top: 1px solid grey;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}

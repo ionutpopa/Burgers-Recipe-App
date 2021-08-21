@@ -1,0 +1,23 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+.auth-container input {
+    font-family: "Open Sans", sans-serif;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.auth-container .errors {
+    color: rgba(235, 35, 0, 0.836);
+}
+
+@media only screen and (max-width: 600px) {
+    .auth-container {
+        margin: 0 50px;
+    }
+}
