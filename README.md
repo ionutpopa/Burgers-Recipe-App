@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Burgers recipes app
+### `Burgers Recipes App 🍔`
 
 ## Available Scripts
 
