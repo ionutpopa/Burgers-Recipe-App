@@ -4,9 +4,9 @@ import "./Auth.css";
 import { signin } from "../../utils/userCalls";
 import { useHistory } from "react-router-dom";
 import * as Yup from "yup";
+import { Dialog, DialogActions, DialogContent, DialogContentText, Button } from "@material-ui/core";
 import Nav from "../nav/Nav";
 import "./Auth.css";
-import { Dialog, DialogActions, DialogContent, DialogContentText, Button } from "@material-ui/core";
 
 const LoginSchema = Yup.object().shape({
 	email: Yup.string().email("Please provide your email").required("Valid email is required!"),

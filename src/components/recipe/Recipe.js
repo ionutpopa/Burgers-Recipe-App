@@ -4,10 +4,10 @@ import { deleteRecipe, getRecipe, updateRecipe } from "../../utils/recipeCalls";
 import { Formik, Field, Form } from "formik";
 import { useHistory } from "react-router-dom";
 import * as Yup from "yup";
+import { Button, Container, Typography } from "@material-ui/core";
 import { getUser } from "../../utils/userCalls";
 import Nav from "../nav/Nav";
 import "./Recipe.css";
-import { Button, Container, Typography } from "@material-ui/core";
 
 const RecipeSchema = Yup.object().shape({
 	title: Yup.string().required("Title is required!"),

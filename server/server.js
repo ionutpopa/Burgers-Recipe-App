@@ -27,7 +27,7 @@ app.post("/signin", signin);
 app.use("/api/user", userRouter);
 app.use("/api/recipes", recipeRouter);
 
-const start =  async() => {
+const start = async () => {
 	try {
 		await connect();
 		app.listen(config.port, () => {
