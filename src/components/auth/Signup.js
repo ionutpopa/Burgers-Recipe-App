@@ -27,15 +27,18 @@ const Signup = () => {
 					email: "",
 				}}
 				validationSchema={SignupSchema}
-				onSubmit={async (values) => {
-					await new Promise((r) => setTimeout(r, 500));
+				onSubmit={(values) => {
 					signup({
 						email: values.email,
 						password: values.password,
 					})
 						.then(() => {
 							history.push({
-								pathname: "/",
+								pathname: "/signin",
+								state: {
+									email: values.email,
+									password: values.password
+								}
 							});
 						})
 						.catch((error) => console.log(error));
@@ -51,7 +54,7 @@ const Signup = () => {
 						{touched.password && errors.password && <span className="errors">{errors.password}</span>}
 						<br />
 						<Button variant="contained" color="primary" type="submit">
-							Submit
+							Signup
 						</Button>
 					</Form>
 				)}

@@ -107,7 +107,7 @@ const Recipe = ({ location }) => {
 										)}
 										<br />
 										<Button variant="contained" color="primary" type="submit">
-											Submit
+											Update
 										</Button>
 									</Form>
 								)}
